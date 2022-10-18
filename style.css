@@ -1,11 +1,11 @@
 /* CSS Reset */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -15,15 +15,11 @@ body{
     height: 100vh;
 }
 
-ul{
+ul {
     list-style: none;
 }
 
-.container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 700px;
+.container {
     background-color: hsl(216, 50%, 16%);
     max-width: 350px;
     padding: 0 1.6rem;
@@ -32,34 +28,59 @@ ul{
     border-radius: 12px;
 }
 
-.container .main-img img{
-    margin: 1.8rem 0 1.5rem 0;
-    width: 300px;
-    border-radius: 10px;
+.container .main-image {
     position: relative;
 }
 
+.container .main-image img {
+    margin: 1.8rem 0 1.5rem 0;
+    width: 300px;
+    border-radius: 10px;
+}
 
+.container .main-image div {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    background-color: hsl(178, 100%, 50%, 60%);
+    z-index: 2;
+    margin-top: 1.8rem;
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
 
-.card-content h2{
+.container .main-image div:hover {
+    opacity: 1;
+}
+
+.container .main-image div img {
+    width: 32px;
+}
+
+.card-content h2 {
     color: hsl(0, 0%, 100%);
     font-weight: 600;
     margin-bottom: 0.8rem;
 }
 
-.card-content h2:hover{
+.card-content h2:hover {
     color: hsl(178, 100%, 50%);
     cursor: pointer;
 }
 
-.card-content p{
+.card-content p {
     color: hsl(215, 51%, 70%);
     font-weight: 300;
     margin-bottom: 0.8rem;
     line-height: 1.7;
 }
 
-.card-content ul{
+.card-content ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -67,45 +88,49 @@ ul{
     font-size: 16px;
 }
 
-.card-content ul li:first-child{
+.card-content ul li:first-child {
     color: hsl(178, 100%, 50%);
 }
 
-.card-content ul li:last-child{
+.card-content ul li:last-child {
     color: hsl(215, 51%, 70%);
 }
 
-.card-content ul li{
+.card-content ul li {
     display: flex;
     align-items: center;
 }
 
-.card-content ul li img{
+.card-content ul li img {
     margin-right: 5px;
 }
 
-.creator img{
+.creator img {
     height: 35px;
     border: 1px solid hsl(0, 0%, 100%);
     border-radius: 100%;
 }
 
-.card-content hr{
+.card-content hr {
     border-style: none;
     border-bottom: 2px solid hsl(215, 32%, 27%);
     margin-bottom: 1rem;
 }
 
-.card-content .creator{
+.card-content .creator {
     display: flex;
     font-size: 16px;
 }
 
-.card-content .creator ul li img{
+.card-content .creator ul li img {
     margin-right: 1rem;
 }
 
-.card-content .creator ul li span:hover{
+.card-content .creator ul li span {
+    color: hsl(0, 0%, 100%);
+}
+
+.card-content .creator ul li span:hover {
     color: hsl(178, 100%, 50%);
     cursor: pointer;
 }
