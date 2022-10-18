@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL]([https://your-solution-url.com](https://github.com/ojaswishivam/nft-preview))
-- Live Site URL: [Live site]([https://your-live-site-url.com](https://ojaswishivam.github.io/nft-preview/))
+- Solution URL: [Solution URL](https://github.com/ojaswishivam/nft-preview)
+- Live Site URL: [Live site](https://ojaswishivam.github.io/nft-preview/)
 
 ## My process
 
