@@ -1,0 +1,111 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    background-color: hsl(217, 54%, 11%);
+    height: 100vh;
+}
+
+ul{
+    list-style: none;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 700px;
+    background-color: hsl(216, 50%, 16%);
+    max-width: 350px;
+    padding: 0 1.6rem;
+    margin: 5rem 0;
+    height: 600px;
+    border-radius: 12px;
+}
+
+.container .main-img img{
+    margin: 1.8rem 0 1.5rem 0;
+    width: 300px;
+    border-radius: 10px;
+    position: relative;
+}
+
+
+
+.card-content h2{
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+}
+
+.card-content h2:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.card-content p{
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+    margin-bottom: 0.8rem;
+    line-height: 1.7;
+}
+
+.card-content ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-size: 16px;
+}
+
+.card-content ul li:first-child{
+    color: hsl(178, 100%, 50%);
+}
+
+.card-content ul li:last-child{
+    color: hsl(215, 51%, 70%);
+}
+
+.card-content ul li{
+    display: flex;
+    align-items: center;
+}
+
+.card-content ul li img{
+    margin-right: 5px;
+}
+
+.creator img{
+    height: 35px;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 100%;
+}
+
+.card-content hr{
+    border-style: none;
+    border-bottom: 2px solid hsl(215, 32%, 27%);
+    margin-bottom: 1rem;
+}
+
+.card-content .creator{
+    display: flex;
+    font-size: 16px;
+}
+
+.card-content .creator ul li img{
+    margin-right: 1rem;
+}
+
+.card-content .creator ul li span:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
